@@ -236,11 +236,6 @@ class JSONSaver(BaseFileSaver):
 
         return deleted_count
 
-    def _clear(self) -> None:
-        """Приватный метод для очистки файла (только для внутреннего использования)."""
-        self._write_file([])
-        print(f"Файл {self.__file_path} очищен")
-
     @property
     def count(self) -> int:
         """Количество самолетов в файле."""

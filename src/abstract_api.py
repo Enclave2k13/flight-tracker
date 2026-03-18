@@ -13,10 +13,6 @@ class BaseAPI(ABC):
     с конкретными API сервисами.
     """
 
-    def __init__(self) -> None:
-        """Инициализация базового класса API."""
-        self.__base_url: Optional[str] = None
-
     @abstractmethod
     def _connect(self, url: str, params: Dict[str, Any], headers: Optional[Dict[str, str]] = None) -> Dict[str, Any]:
         """

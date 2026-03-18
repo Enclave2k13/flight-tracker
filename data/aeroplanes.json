@@ -98938,5 +98938,55 @@
     "altitude": 3893.82,
     "velocity": 28.13,
     "on_ground": false
+  },
+  {
+    "icao24": "4baa50",
+    "callsign": "THY61U",
+    "origin_country": "Turkey",
+    "longitude": 23.3337,
+    "latitude": 54.2101,
+    "altitude": 10675.62,
+    "velocity": 245.31,
+    "on_ground": false
+  },
+  {
+    "icao24": "4ba9c8",
+    "callsign": "THY7CG",
+    "origin_country": "Turkey",
+    "longitude": 31.9086,
+    "latitude": 54.692,
+    "altitude": 12496.8,
+    "velocity": 27.82,
+    "on_ground": false
+  },
+  {
+    "icao24": "503ee9",
+    "callsign": "MEISTRA1",
+    "origin_country": "Lithuania",
+    "longitude": 25.2819,
+    "latitude": 54.6281,
+    "altitude": null,
+    "velocity": 2.57,
+    "on_ground": true
+  },
+  {
+    "icao24": "503ee7",
+    "callsign": "VST69",
+    "origin_country": "Lithuania",
+    "longitude": 25.2942,
+    "latitude": 54.6492,
+    "altitude": null,
+    "velocity": 5.92,
+    "on_ground": true
+  },
+  {
+    "icao24": "503eff",
+    "callsign": "AOS96",
+    "origin_country": "Lithuania",
+    "longitude": 25.2819,
+    "latitude": 54.6278,
+    "altitude": null,
+    "velocity": 1.29,
+    "on_ground": true
   }
 ]

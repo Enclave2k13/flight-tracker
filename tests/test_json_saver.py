@@ -130,15 +130,6 @@ class TestJSONSaver:
         remaining = saver.get_aeroplanes()
         assert remaining[0].origin_country == "Otherland"
 
-    def test_clear(self, saver, sample_aeroplanes_list):
-        """Тест очистки файла"""
-        saver.add_aeroplanes(sample_aeroplanes_list)
-        assert saver.count == 3
-
-        saver.clear()
-        assert saver.count == 0
-        assert saver.get_aeroplanes() == []
-
     def test_count_property(self, saver, sample_aeroplanes_list):
         """Тест свойства count"""
         assert saver.count == 0

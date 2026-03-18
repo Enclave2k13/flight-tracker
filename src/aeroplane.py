@@ -1,7 +1,10 @@
+import logging
 from typing import Any
 from typing import Dict
 from typing import List
 from typing import Optional
+
+logger = logging.getLogger(__name__)
 
 
 class Aeroplane:
@@ -181,12 +184,12 @@ class Aeroplane:
             except (IndexError, ValueError, TypeError) as e:
                 error_count += 1
                 if error_count <= max_errors:
-                    print(f"Ошибка при обработке самолета #{i}: {e}")
+                    logger.warning(f"Ошибка при обработке самолета #{i}: {e}")
                 elif error_count == max_errors + 1:
-                    print(f"... и еще {len(states) - i} ошибок (дальше не показываю)")
+                    logger.warning(f"... и еще {len(states) - i} ошибок (дальше не показываю)")
                 continue
 
         if error_count > 0:
-            print(f"\nИтого пропущено самолетов с ошибками: {error_count}")
+            logger.info(f"\nИтого пропущено самолетов с ошибками: {error_count}")
 
         return aeroplanes
